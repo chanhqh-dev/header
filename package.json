@@ -1,8 +1,7 @@
 {
-  "name": "@editorjs/header",
-  "version": "2.5.0",
+  "name": "@chanhha/editorjs-header",
+  "version": "2.5.1",
   "keywords": [
-    "codex editor",
     "header",
     "tool",
     "editor.js",
@@ -10,15 +9,15 @@
   ],
   "description": "Header Tool for Editor.js",
   "license": "MIT",
-  "repository": "https://github.com/editor-js/header",
+  "repository": "https://github.com/chanhqh-dev/header",
   "main": "./dist/bundle.js",
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development --watch"
   },
   "author": {
-    "name": "CodeX",
-    "email": "team@codex.so"
+    "name": "Chanh Ha",
+    "email": "chanhqh.dev@gmail.com"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",

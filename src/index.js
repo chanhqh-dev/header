@@ -499,9 +499,40 @@ class Header {
    * @returns {{handler: (function(HTMLElement): {text: string}), tags: string[]}}
    */
   static get pasteConfig() {
-    return {
-      tags: ['H1', 'H2', 'H3', 'H4', 'H5', 'H6'],
-    };
+    // Only accept levels that is in config
+    // Otherwise accept all levels
+    if (this._settings.levels) {
+      return {
+        tags: this._settings.levels.map(level => {
+          let tagName = '';
+          switch (level) {
+            case 1:
+              tagName = 'H1';
+              break;
+            case 2:
+              tagName = 'H2';
+              break;
+            case 3:
+              tagName = 'H3';
+              break;
+            case 4:
+              tagName = 'H4';
+              break;
+            case 5:
+              tagName = 'H5';
+              break;
+            case 6:
+              tagName = 'H6';
+              break;
+          }
+          return tagName
+        })
+      }
+    } else {
+      return {
+        tags: ['H1', 'H2', 'H3', 'H4', 'H5', 'H6'],
+      };
+    }
   }
 
   /**

@@ -2,7 +2,11 @@
 
 ![Version of EditorJS that the plugin is compatible with](https://badgen.net/badge/Editor.js/v2.0/blue)
 
-Provides Headings Blocks for the [Editor.js](https://ifmo.su/editor).
+Customize Headings Blocks from the original at [EditorJS Header](https://github.com/editor-js/header).
+
+This customize is about to use along with [EditorJS Title](https://github.com/chanhqh-dev/editorjs-title). Because pasteConfig is hardedcode, we can't paste the H1 tag to Title Tool.
+
+I change behavior of `pasteConfig` following the config for levels.
 
 ## Installation
 
